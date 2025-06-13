@@ -8,10 +8,6 @@ from ia_integration_aws.crew import IaIntegrationAws
 
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
 
-# This main file is intended to be a way for you to run your
-# crew locally, so refrain from adding unnecessary logic into this file.
-# Replace with inputs you want to test with, it will automatically
-# interpolate any tasks and agents information
 
 def run():
     """
@@ -25,7 +21,7 @@ def run():
     try:
         IaIntegrationAws().crew().kickoff(inputs=inputs)
     except Exception as e:
-        raise Exception(f"An error occurred while running the crew: {e}")
+        raise Exception(f"Ocorreu um erro ao executar o crew: {e}")
 
 
 def train():

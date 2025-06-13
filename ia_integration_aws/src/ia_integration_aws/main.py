@@ -8,15 +8,12 @@ from ia_integration_aws.crew import IaIntegrationAws
 
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
 
-MY_BUCKET='s3://crewai-docs/Regulamento_Ford.txt'
-
 def run():
     """
     Run the crew.
     """
     inputs = {        
-        'topic': 'Objetivo do Regulamento Ford',
-        'my_bucket': MY_BUCKET
+        'topic': 'Objetivo do Regulamento Ford'
     }   
     
     try:

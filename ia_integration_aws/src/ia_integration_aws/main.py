@@ -14,8 +14,7 @@ def run():
     Run the crew.
     """
     inputs = {
-        'topic': 'AI LLMs',
-        'current_year': str(datetime.now().year)
+        'my_bucket': 's3://crewai-docs/Regulamento_Ford.txt'
     }
     
     try:

@@ -21,7 +21,7 @@ def run():
     try:
         IaIntegrationAws().crew().kickoff(inputs=inputs)
     except Exception as e:
-        raise Exception(f"An error occurred while running the crew: {e}")
+        raise Exception(f"Ocorreu um erro ao executar o crew: {e}")
 
 
 def train():

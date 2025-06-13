@@ -13,7 +13,8 @@ def run():
     Run the crew.
     """
     inputs = {        
-        'topic': 'Objetivo do Regulamento Ford'
+        'topic': 'Como funciona a Contribuição Voluntária no Regulamento Ford',
+        'my_bucket': 's3://crewai-docs/Regulamento_Ford.txt'
     }   
     
     try:

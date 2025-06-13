@@ -23,6 +23,13 @@ class IaIntegrationAws():
             verbose=True,
             tools=[s3_reader_tool]
         )
+    
+    @agent
+    def reporting_analyst(self) -> Agent:
+        return Agent(
+            config=self.agents_config['reporting_analyst'], # type: ignore[index]
+            verbose=True
+        )
 
     
     @task
@@ -30,6 +37,14 @@ class IaIntegrationAws():
         return Task(
             config=self.tasks_config['research_task'], # type: ignore[index]
         )
+    
+    task
+    def reporting_task(self) -> Task:
+        return Task(
+            config=self.tasks_config['reporting_task'], # type: ignore[index]
+            output_file='report.md'
+        )
+
 
     @crew
     def crew(self) -> Crew:

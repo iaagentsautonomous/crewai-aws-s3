@@ -14,7 +14,8 @@ def run():
     Run the crew.
     """
     inputs = {
-        'my_bucket': 's3://crewai-docs/Regulamento_Ford.txt'
+        'my_bucket': 's3://crewai-docs/Regulamento_Ford.txt',
+        'topic': 'Objetivo do Regulamento Ford',
     }
     
     try:

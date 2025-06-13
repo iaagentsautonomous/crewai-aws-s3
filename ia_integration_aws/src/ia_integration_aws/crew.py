@@ -4,9 +4,7 @@ from crewai.agents.agent_builder.base_agent import BaseAgent
 from crewai_tools.aws.s3 import S3ReaderTool
 from typing import List
 
-MY_BUCKET='s3://crewai-docs/Regulamento_Ford.txt'
 s3_reader_tool = S3ReaderTool()
-s3_reader_tool._run(MY_BUCKET)
 
 @CrewBase
 class IaIntegrationAws():

@@ -38,7 +38,7 @@ class IaIntegrationAws():
             config=self.tasks_config['research_task'], # type: ignore[index]
         )
     
-    task
+    @task
     def reporting_task(self) -> Task:
         return Task(
             config=self.tasks_config['reporting_task'], # type: ignore[index]

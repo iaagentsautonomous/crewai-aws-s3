@@ -13,10 +13,11 @@ def run():
     """
     Run the crew.
     """
-    inputs = {
-        'my_bucket': 's3://crewai-docs/Regulamento_Ford.txt',
-        'topic': 'Objetivo do Regulamento Ford',
+    inputs = {        
+        'topic': 'Objetivo do Regulamento Ford'
     }
+
+    inputs['my_bucket'] = 's3://crewai-docs/Regulamento_Ford.txt'
     
     try:
         IaIntegrationAws().crew().kickoff(inputs=inputs)
